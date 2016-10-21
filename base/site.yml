@@ -1,0 +1,21 @@
+# Base playbook
+---
+- hosts: all
+  tasks:
+    - group_by: key=os_{{ ansible_os_family }}
+
+- hosts: os_RedHat
+  become: yes
+  become_method: sudo
+  roles:
+    - { role: git, tags: ["git", "github"] }
+    - { role: pip, tags: ["pip", "python-pip"] }
+    - { role: vim, tags: ["vim", "vimrc"] }
+
+- hosts: os_Debian
+  become: yes
+  become_method: sudo
+  roles:
+    - { role: git, tags: ["git", "github"] }
+    - { role: pip, tags: ["pip", "python-pip"] }
+    - { role: vim, tags: ["vim", "vimrc"] }

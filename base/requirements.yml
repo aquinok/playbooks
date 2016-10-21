@@ -1,0 +1,11 @@
+- src: git@github.com:aquinok/role_git.git
+  scm: git
+  name: git
+
+- src: git@github.com:aquinok/role_pip.git
+  scm: git
+  name: pip
+
+- src: git@github.com:aquinok/role_vim.git
+  scm: git
+  name: vim
