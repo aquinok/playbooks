@@ -1,3 +1,7 @@
+- src: git@github.com:aquinok/role_bash.git
+  scm: git
+  name: bash
+
 - src: git@github.com:aquinok/role_git.git
   scm: git
   name: git
