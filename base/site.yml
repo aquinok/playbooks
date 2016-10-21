@@ -10,6 +10,7 @@
   roles:
     - { role: git, tags: ["git", "github"] }
     - { role: pip, tags: ["pip", "python-pip"] }
+    - { role: ssh, tags: ["ssh", "sshd"] }
     - { role: vim, tags: ["vim", "vimrc"] }
 
 - hosts: os_Debian
@@ -18,4 +19,5 @@
   roles:
     - { role: git, tags: ["git", "github"] }
     - { role: pip, tags: ["pip", "python-pip"] }
+    - { role: ssh, tags: ["ssh", "sshd"] }
     - { role: vim, tags: ["vim", "vimrc"] }

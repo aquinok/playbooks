@@ -6,6 +6,10 @@
   scm: git
   name: pip
 
+- src: git@github.com:aquinok/role_ssh.git
+  scm: git
+  name: ssh
+
 - src: git@github.com:aquinok/role_vim.git
   scm: git
   name: vim
